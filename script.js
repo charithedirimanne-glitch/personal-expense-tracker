@@ -193,7 +193,7 @@ function addTransaction(event) {
   updateSummary();
   renderTransactions();
   clearForm();
-  showMessage("Transaction added successfully.", true);
+  alert("Transaction added successfully!");
 }
 
 function deleteTransaction(id) {
@@ -204,7 +204,7 @@ function deleteTransaction(id) {
   saveTransactions();
   updateSummary();
   renderTransactions();
-  showMessage("Transaction deleted.", true);
+  alert("Transaction deleted successfully!");
 }
 
 transactionForm.addEventListener("submit", addTransaction);
